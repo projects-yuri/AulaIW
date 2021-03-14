@@ -1,0 +1,49 @@
+
+body {
+  background-image: url("img/wallpaper.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  backdrop-filter: brightness(15%);
+
+}
+
+@font-face {
+  src: url(font/GOGOIA-Regular.ttf);
+  font-family: gogoia;
+}
+
+h1 {
+font-weight: 100;
+font-size: 70px;
+color: white;
+text-align: center;
+font-family: gogoia;
+}
+* {
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+text-align: justify;
+margin-left: 10%;
+margin-right:10%;
+text-indent: 40px;
+
+}
+
+h2 {
+
+font-weight: 70px;
+text-align: center;
+color: white;
+font-weight: bold;
+}
+
+img {
+  position:absolute;
+  left:32%;
+  bottom: -65%;
+}
