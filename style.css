@@ -1,7 +1,7 @@
 
 body {
   background-image: url("img/wallpaper.jpg");
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   height: 100%;
   backdrop-filter: brightness(15%);
@@ -43,7 +43,31 @@ font-weight: bold;
 }
 
 img {
-  position:absolute;
-  left:32%;
-  bottom: -65%;
+  position: relative;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+
+}
+
+figure {
+  margin-bottom: 44px;
+
+
+
+}
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(99, 104, 58);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(99, 104, 58);
+  color: white;
 }
