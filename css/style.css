@@ -86,6 +86,11 @@ img{
   left: 25%;
   width: 50%;
   height: 50%;
+  transition: width 2s linear 1s;
+}
+
+img:hover{
+  width: 300px;
 }
 
 figure{
