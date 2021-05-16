@@ -5,23 +5,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Atividade 1C</title>
-  <link rel="sortcut icon" href="img/html5-logo.png" type="image/gif" />;
+  <link rel="sortcut icon" href="img/html5-logo.png" type="image/gif"/>;
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <header>
-    <section>
-    <nav>
-      <h1>Introdução ao HTML</h1>
+  <header class="fixo">
+    <h1><img class="imglogo" src="img/logo.svg"></h1>
+    <nav class="menu-opcoes">
+      <ul class="ajustes">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
     </nav>
-  </section>
   </header>
   <div class="banner-img"></div>
   <div class="container">
-    <div>
-
-
+    <div id="html">
+      <section>
+        <h1 class="h1diff">Introdução ao HTML</h1>
+      </section>
       <p> <span style="text-decoration:underline; font-weight: bold;">HTML</span> é uma das linguagens que utilizamos para desenvolver websites. O acrônimo vem do inglês e significa Hypertext Markup Language ou em português Linguagem de Marcação de Hipertexto,
 
       é a liguagem base da internet. Foi criada para ser de fácil entendimento por seres humanos e também por máquinas, como por exemplo o Google ou outros sistemas que percorrem a internet capturando informação. </p>
@@ -37,18 +43,18 @@
 
       O W3C é apoiado por várias empresas como a Microsoft, Samsung, Apple, Google, Mozilla e etc... Todas essas empresas ajudam o W3C com um valor anual, ajudando-o a manter suas pesquisas e até mesmo incluindo membros de suas equipes nos grupos de trabalho de cada padrão. Dessa forma há uma ajuda mútua, fazendo com que essas empresas tenham sistemas e dispositivos que suportem cada vez mais os padrões web.</p>
     </div>
-    <div>
+    <div id="css">
         <h2>O CSS</h2>
         <p>CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense  na decoração da sua página. Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos. Também pode criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante.
 
           CSS foi desenvolvido pelo W3C (World Wide Web Consortium) em 1996, por uma razão bem simples. O HTML não foi projetado para ter tags que ajudariam a formatar a página. Você deveria apenas escrever a marcação para o site.</p>
         <br>
-        <h2 style="font-weight: normal;">Acesse uma música <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Aqui!</a></h2>
+        <h2 style="font-weight: normal;">Acesse uma música <a href="https://www.youtube.com/watch?v=8tMIOyDI_BY" target="_blank">Aqui!</a></h2>
         <br>
         <h2 style="font-weight: normal;">Acesse um vídeo <a href="https://www.youtube.com/watch?v=J0w0t4Qn6LY" target="_blank">Aqui!</a></h2>
         <br>
           <div class="img">
-            <img src="img/html.png" alt="Evolução HTML"/>
+            <img class="imgtexto" src="img/html.png" alt="Evolução HTML"/>
           </div>
         <p class="centro">Clique <a href="javascript.html">aqui</a> para conhecer um pouco sobre JavaScript</p>
         <p class="centro">Clique <a href="position.html">aqui</a> para conhecer um pouco sobre os Posicionamentos</p>

@@ -1,143 +1,218 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
-body{
-  background-image: url("../img/wallpaper.png"); 
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-section{
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  background-size: 400% 400%;
-  position: relative;
-  animation: change 10s ease-in-out infinite;
-}
-
-@keyframes change{
-  0%{
-    background-position: 0 50%;
+  html{
+    scroll-behavior: smooth;
   }
-  50%{
-    background-position: 100% 50%;
+
+  body{
+    background-image: url("../img/wallpaper.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  100%{
-    background-position: 0 50%;
+
+  header, footer{
+    background-color: #23A6D5;
+    padding: 1%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+  }
+  
+  section{
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+  }
+
+  @keyframes change{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+  .container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+
+  /* Quando a tela for menor que 599px */
+@media screen and (max-width: 599px){
+  .container{
+      margin-top: 65%;
+  }  
+}
+
+/* Quando a tela for maior que 600px */
+@media screen and (min-width: 600px){
+  .container{
+    margin-top: 45%;
   }
 }
 
-.container{
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+/* Telas maiores que 768px */
+@media only screen and (min-width: 768px){
+  .container{
+    margin-top: 20%;
+  }
+    
+  header{
+    background-color: rgb(35, 166, 213);
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .menu-opcoes{
+    position: absolute;
+    right: 5%;
+    top: 45%;
+  }
+
+  .menu-opcoes ul li{
+    display: inline;
+    margin-left: 10px;
+  }
 }
 
-header, footer{
-background-color: #23A6D5;
-padding: 2%;
-}
 
-h1{
-font-weight: 100;
-font-size: 5rem;
-text-align: center;
-font-family: "Lato",Arial, sans-serif;
-text-shadow: 5px 5px 5px gray;
-border: 2px solid #fff;
-}
+  .fixo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
 
-*{
- font-family: Arial;
- margin-top: 2%;
- margin-bottom: 2%;
-}
-
-p{
-font-family: "Lato", Arial, sans-serif;
-color: white;
-text-align: justify;
-font-weight: normal;
-font-size: 20px;
-margin-left: 10%;
-margin-right:10%;
-text-indent: 40px;
-margin-top: 2%;
-margin-bottom: 2%;
-}
-
-.centro{
-color: white;
-text-align: center;
-}
-
-h2{
-font-family: "Lato";
-font-weight: 70px;
-font-size: 50px;
-text-align: center;
-color: white;
-margin-top: 2%;
-margin-bottom: 2%;
-}
-
-img{
-  position: relative;
-  left: 25%;
-  width: 50%;
-  height: 50%;
-  transition: width 2s linear 1s;
-}
-
-img:hover{
-  width: 300px;
-}
-
-figure{
-  margin-bottom: 44px;
-}
-
-a:link, a:visited{
-  background-color: white;
-  color: black;
-  padding: 5px 5px;
+  h1{
+  font-weight: 100;
+  font-size: 5rem;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+  font-family: "Lato",Arial, sans-serif;
+  }
 
-a:hover, a:active{
-  background-color: #23A6D5;
+  .h1diff{
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 5px gray;
+    border: 2px solid #fff;
+  }
+
+  *{
+  font-family: Arial;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  }
+
+  p{
+  font-family: "Lato", Arial, sans-serif;
   color: white;
-}
-/*Lista não ordenada e lista ordenada tem a mesma configuração*/
-ul li, ol li{
-font-family: "Lato", Arial, sans-serif;
-color: white;
-text-align: justify;
-margin-left: 10%;
-margin-right:10%;
-font-size: 20px;
-text-indent: 40px;
-margin-top: 2%;
-margin-bottom: 2%;
-}
+  text-align: justify;
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right:10%;
+  text-indent: 40px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  }
 
-table{
-border-collapse: collapse;
-width: 100%;
-color: white;
-font-weight: lighter;
-font-family: "Lato";
-}
+  .centro{
+  color: white;
+  text-align: center;
+  }
 
-td, th{
-border: 0.1px solid white;
-text-align: center;
-padding: 6px;
-font-size: 23px;
-}
+  h2{
+  font-family: "Lato";
+  font-weight: 70px;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  }
 
-tr:nth-child(even){
-background-color:#EE7752
-}
+  .imgtexto{
+    width: 50%;
+  }
+
+  .imglogo{
+    width: 100%;
+  }
+
+  figure{
+    margin-bottom: 44px;
+  }
+
+  a:link, a:visited{
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover, a:active{
+    background-color: #23A6D5;
+    color: white;
+  }
+  /*Lista não ordenada e lista ordenada tem a mesma configuração*/
+  .listastexto{
+  font-family: "Lato", Arial, sans-serif;
+  color: white;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right:10%;
+  font-size: 20px;
+  text-indent: 40px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  }
+
+  .ajustes{
+    line-height: 1;
+    text-align: center;
+    font-family: "Lato", Arial, sans-serif;
+  }
+
+  .menuopcoes{
+    text-align: center;
+  }
+
+  table{
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+  font-family: "Lato";
+  }
+
+  td, th{
+  border: 0.1px solid white;
+  text-align: center;
+  padding: 6px;
+  font-size: 23px;
+  }
+
+  tr:nth-child(even){
+  background-color:#EE7752
+  }
+
+  /*
+  Tag = apenas o nome da tag
+  Classe = ponto e o nome da classe, exemplo: .classe
+  id = use o hashtag, exemplo: #id
+  */
