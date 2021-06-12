@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="sortcut icon" href="img/contato.svg" type="image/gif" />;
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Contato</title>
+</head>
+<body>
+    <header class="fixo">
+        <h1><img class="imglogo" src="img/globo.svg"></h1>
+        <nav class="menu-opcoes">
+          <ul class="ajustes">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html#html">HTML</a></li>
+            <li><a href="index.html#css">CSS</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="container">
+    <section>
+        <h1 class="h1diff">Contato</h1>
+    </section>
+        <h2>Formulário de Contato</h2>
+
+        <p class="centro">Entre em contato conosco.</p>
+        <form class="formcontainer">
+            <div class="user-details">
+                <div>
+                    <label>Nome</label><br>
+                    <input class="details" type="text" placeholder="Digite seu nome" required><br>
+                </div>
+                <div>
+                    <label>E-mail</label><br>
+                    <input class="details" type="email" placeholder="Digite seu e-mail" required><br>
+                </div>
+                <div>
+                    <label>Assunto</label><br>
+                    <input class="details" type="text" placeholder="Escreva o assunto..." required><br>
+                </div>
+            </div>
+            <div class="gender-details">
+                <span class="gender-title">Gênero:</span><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Masculino</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Feminino</label><br>
+                <input type="radio" id="dontknow" name="gender" value="dontknow">
+                <label for="dontknow">Prefiro não dizer</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="rock" name="genre" value="rock">
+                <label for="rock">Rock</label><br>
+                <input type="checkbox" id="pop" name="genre" value="pop">
+                <label for="pop">Pop</label><br>
+                <input type="checkbox" id="classic" name="genre" value="classic">
+                <label for="classic">Clássica</label><br>
+                <input type="checkbox" id="psytrance" name="genre" value="psytrance">
+                <label for="psytrance">Psytrance</label><br>
+            </div>
+            <div>
+                <label for="cars">Escolha um carro:</label>
+                    <select id="cars" name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="mclaren">McLaren</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+            </div>
+            <div>
+                <label for="message">Sugestão ou Dúvida:</label>
+                <textarea name="message" style="width:200px; height:300px;">Digite seu texto...</textarea>
+            </div>
+            <div class="button">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p class="centro">Rodapé</p>
+    </footer>
+</body>
+</html>
