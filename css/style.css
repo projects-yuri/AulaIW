@@ -6,9 +6,7 @@
   }
 
   body{
-    background-image: url("../img/wallpaper.png"); 
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(135deg, #2391b9, #9a29c7);
   }
 
   header, footer{
@@ -152,7 +150,6 @@
   .imglogo{
     width: 100%;
     filter: brightness(1.40);
-    margin-left: 25%;
   }
 
   figure{
@@ -218,25 +215,41 @@
     background-color: white;
   }
 
-  .formcontainer{
-    max-width: 700px;
-    width: 100%;
-    background:#FFF;
-    padding: 25px 30px;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
+  .user-details{
+    font-weight: 500;
   }
 
-  .details{
-    height: 45px;
+  .formcontainer{
+    max-width: 700px;
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background:#FFF;
+    padding: 25px 30px;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5%;
+  }
+
+  legend{
+    font-weight: 500;
+  }
+
+  .details, textarea{
+    height: 45px;
+    width: 90%;
     outline: none;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 1px solid #ccc;
-    padding-left: 15px;
+    padding: 12px 20px;
     font-size: 16px;
     border-bottom-width: 2px;
+    box-sizing: border-box;
     transition: all 0.3s ease;
+  }
+
+  input[type=text], [type=email]{
+    display: block;
   }
 
   input:focus,
@@ -244,34 +257,82 @@
     border-color: #E73C7E;
   }
 
-  form .gender-details .gender-title{
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  form .gender-details{
-    display: flex;
-    width: 80%;
-    margin: 14px 0;
-    justify-content: space-between;
-  }
-
-  form .button input{
+  input[type=submit]{
     height: 40px;
     width: 100%;
     outline: none;
     color: #fff;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     border: none;
+    font-family: 'Poppins';
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 1px;
-    border-radius: 5px;
+    border-radius: 6px;
   }
 
-  form .button input:hover{
+  input[type=submit]:hover{
     background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    cursor: pointer;
   }
+
+  fieldset{
+    width: 86%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 2%;
+    border-bottom-width: 2px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  fieldset:hover{
+    border-color: #E73C7E;
+    transition: all 0.3s ease;
+  }
+
+  .height{
+    font-weight: 400;
+  }
+
+  /* Scrollbar customizado*/
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+  cursor:pointer;
+  height:8px;
+  background: gray;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(99, 99, 99);
+}
+
+select{
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 2%;
+  border-bottom-width: 2px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+select:hover{
+  border-color: #E73C7E;
+  transition: all 0.3s ease;
+}
+
   /*
   Tag = apenas o nome da tag
   Classe = ponto e o nome da classe, exemplo: .classe
